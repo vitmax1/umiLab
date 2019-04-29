@@ -1,0 +1,59 @@
+.feedback
+	padding-top: 40px
+	padding-bottom: 50px
+	background-color: #161616
+	&-title
+		+thin
+		color: #ffffff
+		font-size: 40px
+		text-align: center
+		line-height: 50px
+		margin-bottom: 60px
+	&-form
+		display: flex
+		flex-direction: column
+		max-width: 575px
+		margin: auto
+		&__item
+			margin-bottom: 100px
+			position: relative
+	&-input
+		+roboto
+		font-size: 24px
+		line-height: 35px
+		display: block
+		width: 100%
+		border: none
+		outline: none
+		height: 50px
+		border-bottom: 2px solid #F7F8FA
+		opacity: 0.2
+		transition: 0.3s ease
+		background-color: #161616
+		color: #ffffff
+		&:focus::placeholder
+			opacity: 0
+			transition: 0.3s ease
+	&-btn
+		width: 100%
+		outline: none
+		border:  none
+	&-num
+		+roboto
+		font-size: 20px
+		color: #f47821
+		border: 1px solid #ffffff
+		border-radius: 50px
+		position: absolute
+		left: -90px
+		top: -23px
+		width: 64px 
+		height: 64px
+		display: flex
+		align-items: center
+		justify-content: center
+	&-option
+		+bold
+		color: #ffffff
+		font-size: 16px
+		letter-spacing: -1%

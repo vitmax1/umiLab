@@ -1,0 +1,37 @@
+.edge
+	background-color: #F7F5FA
+	padding-top: 88px
+	padding-bottom: 100px
+	&-title
+		+thin
+		line-height: 50px
+		font-size: 40px
+		text-align: center
+		letter-spacing: -0.02em
+		margin-bottom: 60px
+	&-subtitle
+		+reg
+		line-height: 30px
+		font-size: 20px
+		margin-bottom: 50px
+	&-text
+		+roboto
+		font-size: 16px
+		line-height: 26px
+		color: #4E4D53
+		max-width: 320px
+		position: relative
+		&__wide
+			max-width: 350px
+		&:before
+			content: ''
+			position: absolute
+			width: 24px
+			height: 2px
+			background-color: #F47821
+			top: -30px
+	&-box
+		display: flex
+		justify-content: space-between
+		&__item
+			flex-basis: 32%

@@ -8,6 +8,10 @@
   margin: auto;
 }
 
+.container-edge {
+  max-width: 1172px;
+}
+
 @media (max-width: 1199px) {
   .container {
     max-width: 960px;
@@ -424,10 +428,10 @@ template {
 .header-title {
   font-size: 50px;
   font-size: 48px;
-  font-family: 'DIN Pro Regular', serif;
-  line-height: 54px;
+  font-family: 'DIN Pro Light', serif;
+  line-height: 30px;
   text-align: center;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   color: #222222;
 }
 
@@ -437,7 +441,7 @@ template {
   line-height: 26px;
   text-align: center;
   color: #4A4556;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 
 .header-link {
@@ -453,7 +457,6 @@ template {
 
 .header-button {
   width: 236px;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,11 +468,14 @@ template {
           justify-content: center;
   cursor: pointer;
   position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
 }
 
 .header-button:after {
   content: '';
-  background-color: rgba(135, 135, 135, 0.05);
+  background-color: rgba(135, 135, 135, 0.5);
   height: 55px;
   width: 55px;
   position: absolute;
@@ -491,6 +497,7 @@ template {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #222222;
+  text-decoration: none;
 }
 
 .plus {
@@ -515,7 +522,256 @@ template {
 .hero {
   background: url("../img/hero.png") no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   height: 600px;
+}
+
+.whatwedo {
+  background-color: #F7F5FA;
+  position: relative;
+  height: 50vh;
+}
+
+.whatwedo-wrap {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -21%);
+          transform: translate(-50%, -21%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 972px;
+}
+
+.whatwedo-wrap__item {
+  border: 1px solid #EDEDED;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background-color: #fff;
+  max-width: 486px;
+  padding: 36px 40px 35px 60px;
+}
+
+.whatwedo-wrap__item:nth-child(1) {
+  border-right: none;
+  border-bottom: none;
+}
+
+.whatwedo-wrap__item:nth-child(2) {
+  border-bottom: none;
+}
+
+.whatwedo-wrap__item:nth-child(3) {
+  border-right: none;
+}
+
+.whatwedo-title {
+  font-family: 'DIN Pro Regular', serif;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #F47821;
+}
+
+.whatwedo-text {
+  font-family: 'DIN Pro Regular', serif;
+  margin-top: 18px;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  color: #222222;
+  max-width: 350px;
+}
+
+.looklike {
+  padding-top: 60px;
+  padding-bottom: 75px;
+}
+
+.looklike-title {
+  font-family: 'DIN Pro Regular', serif;
+  font-size: 48px;
+  line-height: 105px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #222222;
+}
+
+.looklike-text {
+  font-family: 'Roboto', serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #4E4D53;
+  max-width: 773px;
+  margin: auto;
+  margin-bottom: 28px;
+}
+
+.edge {
+  background-color: #F7F5FA;
+  padding-top: 88px;
+  padding-bottom: 100px;
+}
+
+.edge-title {
+  font-family: 'DIN Pro Light', serif;
+  line-height: 50px;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-bottom: 60px;
+}
+
+.edge-subtitle {
+  font-family: 'DIN Pro Regular', serif;
+  line-height: 30px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.edge-text {
+  font-family: 'Roboto', serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #4E4D53;
+  max-width: 320px;
+  position: relative;
+}
+
+.edge-text__wide {
+  max-width: 350px;
+}
+
+.edge-text:before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #F47821;
+  top: -30px;
+}
+
+.edge-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.edge-box__item {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+
+.feedback {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background-color: #161616;
+}
+
+.feedback-title {
+  font-family: 'DIN Pro Light', serif;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 60px;
+}
+
+.feedback-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 575px;
+  margin: auto;
+}
+
+.feedback-form__item {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.feedback-input {
+  font-family: 'Roboto', serif;
+  font-size: 24px;
+  line-height: 35px;
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  border-bottom: 2px solid #F7F8FA;
+  opacity: 0.2;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background-color: #161616;
+  color: #ffffff;
+}
+
+.feedback-input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.feedback-input:focus:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.feedback-input:focus::-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.feedback-input:focus::placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.feedback-btn {
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.feedback-num {
+  font-family: 'Roboto', serif;
+  font-size: 20px;
+  color: #f47821;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  position: absolute;
+  left: -90px;
+  top: -23px;
+  width: 64px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback-option {
+  font-family: 'DIN Pro Bold', serif;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: -1%;
 }
 /*# sourceMappingURL=style.css.map */

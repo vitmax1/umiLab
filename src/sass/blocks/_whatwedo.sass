@@ -1,0 +1,38 @@
+.whatwedo
+	background-color: #F7F5FA
+	position: relative
+	height: 50vh
+	&-wrap
+		position: absolute
+		left: 50%
+		transform: translate(-50%, -21%)
+		display: flex
+		flex-wrap: wrap
+		width: 972px
+		&__item
+			border: 1px solid #EDEDED
+			flex-basis: 50%
+			background-color: #fff
+			max-width: 486px
+			padding: 36px 40px 35px 60px
+			&:nth-child(1)
+				border-right: none
+				border-bottom: none
+			&:nth-child(2)
+				border-bottom: none
+			&:nth-child(3)
+				border-right: none
+	&-title
+		+reg
+		font-size: 12px
+		letter-spacing: 0.04em
+		text-transform: uppercase
+		color: #F47821
+	&-text
+		+reg
+		margin-top: 18px
+		font-size: 24px
+		line-height: 30px
+		letter-spacing: -0.03em
+		color: #222222
+		max-width: 350px
