@@ -1,0 +1,47 @@
+.header
+	height: 480px
+	display: flex
+	&-title
+		font-size: 50px
+		font-size: 48px
+		+reg
+		line-height: 54px /* identical to box height */
+		text-align: center
+		letter-spacing: -0.02em
+		color: #222222
+	&-subtitle
+		+roboto
+		font-size: 16px
+		line-height: 26px
+		text-align: center
+		color: #4A4556
+		margin-bottom: 35px
+	&-link
+		text-decoration: none
+		color: #F47821
+		transition: all 0.4s
+		&:hover
+			color: #f8a76d
+	&-button
+		background-color: rgba(135, 135, 135, 0.05)
+		border-radius: 111px
+		width: 236px
+		height: 54px
+		margin: auto
+		display: flex
+		align-items: center
+		justify-content: center
+		cursor: pointer
+		&__text
+			+gilroy
+			font-size: 16px
+			line-height: 20px /* identical to box height */
+			letter-spacing: 0.02em
+			text-transform: uppercase
+			color: #222222
+.hero
+	background: url('../img/hero.png') no-repeat
+	background-position: center
+	background-size: cover
+	height: 600px
+	

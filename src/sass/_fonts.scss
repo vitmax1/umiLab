@@ -1,0 +1,45 @@
+@font-face {
+	font-display: swap;
+	font-family: 'DIN Pro Light';
+	src: local('DIN Pro Light'),
+		url('../fonts/DINPro-Light.ttf') format('truetype');
+}
+@font-face {
+	font-display: swap;
+	font-family: 'DIN Pro Regular';
+	src: local('DIN Pro Regular'),
+		url('../fonts/DINPro-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-display: swap;
+	font-family: 'DIN Pro Bold';
+	src: local('DIN Pro Bold'),
+	 url('../fonts/DINPro-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-display: swap;
+	font-family: 'Roboto';
+	src: local('Roboto'),
+		url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-display: swap;
+	font-family: 'Gilroy';
+	src: local('Gilroy-Bold'),
+		url('../fonts/Gilroy-Bold.ttf') format('truetype');
+}
+@mixin thin {
+	font-family: 'DIN Pro Light', serif;
+}
+@mixin reg {
+	font-family: 'DIN Pro Regular', serif;
+}
+@mixin bold {
+	font-family: 'DIN Pro Bold', serif;
+}
+@mixin roboto {
+	font-family: 'Roboto', serif;
+}
+@mixin gilroy {
+	font-family: 'Gilroy', serif;
+}
