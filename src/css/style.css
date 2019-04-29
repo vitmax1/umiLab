@@ -452,10 +452,7 @@ template {
 }
 
 .header-button {
-  background-color: rgba(135, 135, 135, 0.05);
-  border-radius: 111px;
   width: 236px;
-  height: 54px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,6 +464,24 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+  position: relative;
+}
+
+.header-button:after {
+  content: '';
+  background-color: rgba(135, 135, 135, 0.05);
+  height: 55px;
+  width: 55px;
+  position: absolute;
+  border-radius: 50px;
+  left: -8px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: -1;
+}
+
+.header-button:hover:after {
+  width: 100%;
 }
 
 .header-button__text {
@@ -476,6 +491,25 @@ template {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #222222;
+}
+
+.plus {
+  color: #F47821;
+  font-weight: bold;
+  font-size: 25px;
+  height: 55px;
+  width: 55px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: -2.5%;
 }
 
 .hero {
