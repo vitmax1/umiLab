@@ -586,7 +586,7 @@ template {
 }
 
 .looklike {
-  padding-top: 60px;
+  padding-top: 33px;
   padding-bottom: 75px;
 }
 
@@ -660,6 +660,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 43px;
 }
 
 .edge-box__item {
@@ -668,7 +669,7 @@ template {
 }
 
 .feedback {
-  padding-top: 40px;
+  padding-top: 65px;
   padding-bottom: 50px;
   background-color: #161616;
 }
@@ -679,7 +680,8 @@ template {
   font-size: 40px;
   text-align: center;
   line-height: 50px;
-  margin-bottom: 60px;
+  margin-bottom: 85px;
+  letter-spacing: -0.02em;
 }
 
 .feedback-form {
@@ -695,19 +697,18 @@ template {
 }
 
 .feedback-form__item {
-  margin-bottom: 100px;
+  margin-bottom: 78px;
   position: relative;
 }
 
 .feedback-input {
   font-family: 'Roboto', serif;
   font-size: 24px;
-  line-height: 35px;
+  line-height: 45px;
   display: block;
   width: 100%;
   border: none;
   outline: none;
-  height: 50px;
   border-bottom: 2px solid #F7F8FA;
   opacity: 0.2;
   -webkit-transition: 0.3s ease;
@@ -773,5 +774,7 @@ template {
   color: #ffffff;
   font-size: 16px;
   letter-spacing: -1%;
+  display: inline-block;
+  margin-bottom: 25px;
 }
 /*# sourceMappingURL=style.css.map */
