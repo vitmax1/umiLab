@@ -668,6 +668,47 @@ template {
       flex-basis: 32%;
 }
 
+textarea {
+  resize: none;
+  line-height: 40px;
+  font-family: 'Roboto', serif;
+  font-size: 24px;
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #F7F8FA;
+  opacity: 0.2;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background-color: #161616;
+  color: #ffffff;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+textarea:focus::-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+textarea:focus::placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
 .feedback {
   padding-top: 65px;
   padding-bottom: 50px;
@@ -701,6 +742,10 @@ template {
   position: relative;
 }
 
+.feedback-form__item:nth-child(4) {
+  margin-bottom: 65px;
+}
+
 .feedback-input {
   font-family: 'Roboto', serif;
   font-size: 24px;
@@ -710,11 +755,11 @@ template {
   border: none;
   outline: none;
   border-bottom: 2px solid #F7F8FA;
-  opacity: 0.2;
+  opacity: 0.4;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   background-color: #161616;
-  color: #ffffff;
+  color: #F7F8FA;
 }
 
 .feedback-input:focus::-webkit-input-placeholder {
@@ -745,6 +790,28 @@ template {
   width: 100%;
   outline: none;
   border: none;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 111px;
+  height: 54px;
+  cursor: pointer;
+  color: #F47821;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.feedback-btn:hover {
+  color: #ffffff;
+  background: #F47821;
+}
+
+.feedback-btn__text {
+  font-family: 'Gilroy', serif;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .feedback-num {
