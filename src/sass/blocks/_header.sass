@@ -64,7 +64,30 @@
 	left: -2.5%
 .hero
 	background: url('../img/hero.png') no-repeat
-	background-position: center
+	background-position: bottom
 	background-size: contain
 	height: 600px
-	
+@media (max-width: 1435px)	
+	.hero
+		background-size: cover
+@media (max-width: 768px)
+	.header
+		&-title
+			font-size: 40px
+		&-subtitle
+			max-width: 385px
+			margin-left: auto
+			margin-right: auto
+@media (max-width: 640px)
+	.header
+		&-title
+			font-size: 30px
+@media (max-width: 400px)
+	.header
+		&-title
+			font-size: 26px
+		&-subtitle
+			max-width: 300px
+			font-size: 14px
+		&-button
+			left: 48%

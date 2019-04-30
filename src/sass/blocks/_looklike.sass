@@ -1,5 +1,7 @@
 .looklike
-	padding-top: 33px
+	transform: translateY(-1%)
+	background: #ffffff
+	padding-top: 50px
 	padding-bottom: 75px
 	&-title
 		+reg
@@ -16,4 +18,13 @@
 		max-width: 773px
 		margin: auto
 		margin-bottom: 28px
-
+@media (max-width: 991px)
+ .looklike
+		padding-top: 33px
+		padding-bottom: 75px
+		&-text
+			padding: 0 20px
+@media (max-width: 550px)
+	.looklike
+		&-title
+			font-size: 36px

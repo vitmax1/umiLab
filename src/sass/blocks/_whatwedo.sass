@@ -1,14 +1,11 @@
 .whatwedo
 	background-color: #F7F5FA
-	position: relative
-	height: 50vh
 	&-wrap
-		position: absolute
-		left: 50%
-		transform: translate(-50%, -21%)
+		transform: translateY(-21%)
 		display: flex
+		margin: auto
 		flex-wrap: wrap
-		width: 972px
+		max-width: 972px
 		&__item
 			border: 1px solid #EDEDED
 			flex-basis: 50%
@@ -36,3 +33,9 @@
 		letter-spacing: -0.03em
 		color: #222222
 		max-width: 350px
+@media (max-width: 991px)
+	.whatwedo
+		&-wrap
+			transform: translateY(-10%)
+			flex-direction: column
+			align-items: center

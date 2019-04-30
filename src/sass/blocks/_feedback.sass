@@ -37,6 +37,12 @@ textarea
 			position: relative
 			&:nth-child(4)
 				margin-bottom: 65px
+	&-form #username-error
+		position: absolute
+	&-form #email-error
+		position: absolute
+	&-form #phone-error
+		position: absolute
 	&-input
 		+roboto
 		font-size: 24px
@@ -50,6 +56,7 @@ textarea
 		transition: 0.3s ease
 		background-color: #161616
 		color: #F7F8FA
+		position: relative
 		&:focus::placeholder
 			opacity: 0
 			transition: 0.3s ease
@@ -94,3 +101,35 @@ textarea
 		letter-spacing: -1%
 		display: inline-block
 		margin-bottom: 25px
+.invalid
+	+thin
+	color: #ffffff
+@media (max-width: 991px)
+	.feedback
+		&-form
+			max-width: 530px
+@media (max-width: 768px)
+	.feedback
+		&-form
+			max-width: 430px
+			margin-left: 20%
+			margin-right: 3%
+@media (max-width: 580px)
+	.feedback
+		&-title
+			font-size: 30px
+		&-input
+			font-size: 18px
+@media (max-width: 480px)
+	.feedback
+		&-form
+			margin: auto
+			padding: 0 20px
+		&-num
+			display: none
+@media (max-width: 430px)
+	.feedback
+		&-title
+			font-size: 26px
+		&-input
+			font-size: 16px

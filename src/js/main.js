@@ -1,8 +1,9 @@
 $(document).ready(function () {
-	///////////////////// Перенос строки в textarea /////////////////////////
+
 	$('#textarea').attr('placeholder', 'Свой проект по созданию универсальной' + '\n' + 'инфраструктуры строительства');
 
-	/////////////////////  Валидация формы  /////////////////////////
+	$(".phone").mask("8 (999) 999-9999");
+
 	$('#feedback-form').validate({
 		errorClass: "invalid",
 		errorElement: "div",
@@ -22,17 +23,16 @@ $(document).ready(function () {
 			username: {
 				minlength: jQuery.validator.format("от 2 до 15 символов"),
 				maxlength: jQuery.validator.format("до 15 символов"),
-				required: "Заполните поле"
+				required: "заполните поле"
 			},
 			phone: {
-				required: "Заполните поле"
+				required: "заполните поле"
 			},
 			email: {
-				email: "Введите корректный email",
-				required: "Заполните поле"
+				email: "введите корректный email",
+				required: "заполните поле"
 			},
-		},
-		
+		},	
 	});
-	$(".phone").mask("8 (999) 999-9999");
+
 });

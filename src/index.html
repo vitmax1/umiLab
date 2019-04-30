@@ -94,7 +94,7 @@
 	<section class="feedback">
 		<div class="container">
 			<h2 class="feedback-title">Теперь расскажите о себе</h2>
-			<form action="#" method="POST" id="feedback-form" class="feedback-form">
+			<form action="#" id="feedback-form" class="feedback-form">
 				<div class="feedback-form__item">
 					<span class="feedback-num">1</span><span class="feedback-option">Фамилия и имя</span>
 					<input type="text" name="username" class="feedback-input" placeholder="Сидоров Александр" >
@@ -105,7 +105,7 @@
 				</div>
 				<div class="feedback-form__item">
 					<span class="feedback-num">3</span><span class="feedback-option">Телефон</span>
-					<input type="tel" name="phone" class="feedback-input phone" placeholder="+7 (999)-328-14-20" >
+					 <input type="tel" name="phone" class="feedback-input phone"  placeholder="+7 (999)-328-14-20"> 
 				</div>
 				<div class="feedback-form__item">
 					<span class="feedback-num">4</span><span class="feedback-option">Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?</span>
@@ -118,57 +118,10 @@
 		</div>
 	</section>
 	
-	<srcipt src="js/jquery-3.3.1.min.js"></srcipt>
-	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/jquery-3.4.0.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/main.js"></script>
-	<!-- <script>
-	$(document).ready(function () {
-	$('#feedback-form').validate({
-			errorClass: "invalid",
-			errorElement: "div",
-			rules: {
-				username: {
-					required: true,
-					minlength: 2,
-					maxlength: 15
-				},
-				phone: "required",
-				email: {
-					required: true,
-					email: true
-				},
-			},
-			messages: {
-				username: {
-					minlength: jQuery.validator.format("от 2 до 15 символов"),
-					maxlength: jQuery.validator.format("до 15 символов"),
-					required: "Заполните поле"
-				},
-				phone: {
-					required: "Заполните поле"
-				},
-				email: {
-					email: "Введите корректный email",
-					required: "Заполните поле"
-				},
-			},
-			/////////////////  обработка AJAX формы   /////////////////
-			submitHandler: function (form) {
-				$.ajax({
-					url: 'mail/smart.php',
-					type: 'POST',
-					data: $(this).serialize(),
-					success: function (data) {
-						$('.success').html('Ваша форма отправлена');
-					},
-				});
-				return false;
-			}
-		});
-	$(".phone").mask("8 (999) 999-9999");
-	});
-	</script> -->
 
 </body>
 </html>

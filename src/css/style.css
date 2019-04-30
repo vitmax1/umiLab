@@ -521,28 +521,61 @@ template {
 
 .hero {
   background: url("../img/hero.png") no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: contain;
   height: 600px;
 }
 
+@media (max-width: 1435px) {
+  .hero {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 40px;
+  }
+  .header-subtitle {
+    max-width: 385px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-title {
+    font-size: 26px;
+  }
+  .header-subtitle {
+    max-width: 300px;
+    font-size: 14px;
+  }
+  .header-button {
+    left: 48%;
+  }
+}
+
 .whatwedo {
   background-color: #F7F5FA;
-  position: relative;
-  height: 50vh;
 }
 
 .whatwedo-wrap {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, -21%);
-          transform: translate(-50%, -21%);
+  -webkit-transform: translateY(-21%);
+          transform: translateY(-21%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 972px;
+  max-width: 972px;
 }
 
 .whatwedo-wrap__item {
@@ -585,8 +618,25 @@ template {
   max-width: 350px;
 }
 
+@media (max-width: 991px) {
+  .whatwedo-wrap {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .looklike {
-  padding-top: 33px;
+  -webkit-transform: translateY(-1%);
+          transform: translateY(-1%);
+  background: #ffffff;
+  padding-top: 50px;
   padding-bottom: 75px;
 }
 
@@ -609,9 +659,25 @@ template {
   margin-bottom: 28px;
 }
 
+@media (max-width: 991px) {
+  .looklike {
+    padding-top: 33px;
+    padding-bottom: 75px;
+  }
+  .looklike-text {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .looklike-title {
+    font-size: 36px;
+  }
+}
+
 .edge {
   background-color: #F7F5FA;
-  padding-top: 88px;
+  padding-top: 80px;
   padding-bottom: 100px;
 }
 
@@ -666,6 +732,38 @@ template {
 .edge-box__item {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
+}
+
+@media (max-width: 991px) {
+  .edge {
+    padding-top: 58px;
+    padding-bottom: 60px;
+  }
+  .edge-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0;
+  }
+  .edge-box__item {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 580px) {
+  .edge-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 430px) {
+  .edge-title {
+    font-size: 26px;
+  }
 }
 
 textarea {
@@ -746,6 +844,18 @@ textarea:focus::placeholder {
   margin-bottom: 65px;
 }
 
+.feedback-form #username-error {
+  position: absolute;
+}
+
+.feedback-form #email-error {
+  position: absolute;
+}
+
+.feedback-form #phone-error {
+  position: absolute;
+}
+
 .feedback-input {
   font-family: 'Roboto', serif;
   font-size: 24px;
@@ -760,6 +870,7 @@ textarea:focus::placeholder {
   transition: 0.3s ease;
   background-color: #161616;
   color: #F7F8FA;
+  position: relative;
 }
 
 .feedback-input:focus::-webkit-input-placeholder {
@@ -843,5 +954,52 @@ textarea:focus::placeholder {
   letter-spacing: -1%;
   display: inline-block;
   margin-bottom: 25px;
+}
+
+.invalid {
+  font-family: 'DIN Pro Light', serif;
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .feedback-form {
+    max-width: 530px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback-form {
+    max-width: 430px;
+    margin-left: 20%;
+    margin-right: 3%;
+  }
+}
+
+@media (max-width: 580px) {
+  .feedback-title {
+    font-size: 30px;
+  }
+  .feedback-input {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-form {
+    margin: auto;
+    padding: 0 20px;
+  }
+  .feedback-num {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .feedback-title {
+    font-size: 26px;
+  }
+  .feedback-input {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
