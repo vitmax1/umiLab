@@ -475,7 +475,7 @@ template {
 
 .header-button:after {
   content: '';
-  background-color: rgba(135, 135, 135, 0.5);
+  background-color: rgba(135, 135, 135, 0.33);
   height: 55px;
   width: 55px;
   position: absolute;
