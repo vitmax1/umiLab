@@ -851,10 +851,12 @@ textarea:focus::placeholder {
 
 .feedback-form #email-error {
   position: absolute;
+  bottom: -20px;
 }
 
 .feedback-form #phone-error {
   position: absolute;
+  bottom: -20px;
 }
 
 .feedback-input {
