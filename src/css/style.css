@@ -846,6 +846,7 @@ textarea:focus::placeholder {
 
 .feedback-form #username-error {
   position: absolute;
+  bottom: -20px;
 }
 
 .feedback-form #email-error {
@@ -957,7 +958,7 @@ textarea:focus::placeholder {
 }
 
 .invalid {
-  font-family: 'DIN Pro Light', serif;
+  font-family: 'Roboto', serif;
   color: #ffffff;
 }
 
