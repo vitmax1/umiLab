@@ -675,6 +675,10 @@ template {
   }
 }
 
+.footer a:hover {
+  color: #000;
+}
+
 .edge {
   background-color: #F7F5FA;
   padding-top: 80px;
